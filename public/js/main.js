@@ -11567,29 +11567,13 @@ module.exports = function spread(callback) {
 
 /***/ }),
 /* 32 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
 //
 //
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            isLoading: true
-        };
-    },
-    ready: function ready() {
-        this.isLoading = false;
-    },
-    beforeDestroy: function beforeDestroy() {},
-
-    methods: {}
-});
 
 /***/ }),
 /* 33 */

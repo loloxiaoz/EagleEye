@@ -88,49 +88,59 @@
     </div>
 </template>
 <script>
-    export default {
-        data () {
-            return {
-                spanLeft: 5,
-                spanRight: 19,
-                columns1: [
-                    {
-                        title: '姓名',
-                        key: 'name'
-                    },
-                    {
-                        title: '年龄',
-                        key: 'age'
-                    },
-                    {
-                        title: '地址',
-                        key: 'address'
-                    }
-                ],
-                data1: [
-                    {
-                        name: '王小明',
-                        age: 18,
-                        address: '北京市朝阳区芍药居'
-                    }
-                ]
-            }
-        },
-        computed: {
-            iconSize () {
-                return this.spanLeft === 5 ? 14 : 24;
-            }
-        },
-        methods: {
-            toggleClick () {
-                if (this.spanLeft === 5) {
-                    this.spanLeft = 2;
-                    this.spanRight = 22;
-                } else {
-                    this.spanLeft = 5;
-                    this.spanRight = 19;
+import {dataLists} from '../services/data'
+export default {
+    mounted() {
+        this.getData();
+    },
+    data () {
+        return {
+            spanLeft: 5,
+            spanRight: 19,
+            columns1: [
+                {
+                    title: '姓名',
+                    key: 'name'
+                },
+                {
+                    title: '年龄',
+                    key: 'age'
+                },
+                {
+                    title: '地址',
+                    key: 'address'
                 }
+            ],
+            data1: []
+        }
+    },
+    computed: {
+        iconSize () {
+            return this.spanLeft === 5 ? 14 : 24;
+        }
+    },
+    methods: {
+        toggleClick () {
+            if (this.spanLeft === 5) {
+                this.spanLeft = 2;
+                this.spanRight = 22;
+            } else {
+                this.spanLeft = 5;
+                this.spanRight = 19;
             }
+        },
+        async getData(){
+            var self=this;
+            const datas=await dataLists();
+            console.log(datas);
+            datas.forEach(function(value){
+                    var obj={};
+                    obj.name=value.ymd;
+                    obj.age=value.id;
+                    obj.address=value.content;
+                    self.data1.push(obj)
+            });
         }
     }
+}
 </script>

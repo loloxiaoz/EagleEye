@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/data', array('uses' => '\App\Http\Controllers\Biz\DataController@get'));
+Route::get('/data/list', array('uses' => '\App\Http\Controllers\Biz\DataController@get'));
 Route::get('/insert', array('uses' => '\App\Http\Controllers\Biz\DataController@insert'));
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
