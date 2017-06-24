@@ -3,7 +3,10 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Services\CurlHelper as CurlHelper;
+use App\Services\CurlHelper;
+use App\Services\Parser\Job51;
+use App\Services\Push\AliYun;
+use App\Snapshot;
 
 class SearchTrade extends Command
 {
@@ -28,12 +31,35 @@ class SearchTrade extends Command
        parent::__construct();
     }
 
+    private function save($data,$tag)
+    {
+        foreach($data as $v){
+            // $ret    = Snapshot::where("keyword",$v)->count();
+            // if(!$ret){
+                $snapShot = new Snapshot;
+                $snapShot->url          = $tag;
+                $snapShot->ymd          = Date("Y-m-d");
+                $snapShot->keyword      = $v;
+                $snapShot->content      = $v;
+                $snapShot->created_at   = time();
+                $snapShot->save();
+                $ret = AliYun::sendCompanyAlarm($v,"",$tag);
+var_dump($ret);
+exit;
+            // }
+        }
+    }
+
     private function handleTarget($target)
     {
         $this->curlHelper->setHeader($target["header"]);
         $this->curlHelper->setUserAgent($target["userAgent"]);
         $content    = $this->curlHelper->request($target["url"]);
         $content    = $this->curlHelper->translate($content);
+        $parserName = $target["name"];
+        $parser     = new $parserName($content);
+        $data       = $parser->handle();
+        $this->save($data,$target["tag"]);
     }
 
     /**
@@ -45,7 +71,7 @@ class SearchTrade extends Command
     {
         foreach($this->config as $target){
             try{
-            $this->handleTarget($target);
+                $this->handleTarget($target);
             }catch(Exception $e){
                 
             }

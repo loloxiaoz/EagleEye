@@ -1,17 +1,17 @@
 <?php
 
 namespace App\Http\Controllers\Biz;
-use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
+use App\Snapshot;
 
 class DataController extends Controller
 {
     public function get()
     {
-        $data   = DB::table('snapshot')->get();
-        return $data;
+        return $data   =SnapShot::all(); 
     }
 
     public function insert()

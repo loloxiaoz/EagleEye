@@ -1,6 +1,7 @@
 [
     {
-        "name"      : "51job",
+        "tag"       : "51Job",
+        "name"      : "\\App\\Services\\Parser\\Job51",
         "header"    : {
             "Host"              : "search.51job.com",
             "Connection"        : "keep-alive",
