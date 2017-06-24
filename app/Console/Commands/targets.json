@@ -1,0 +1,16 @@
+[
+    {
+        "name"      : "51job",
+        "header"    : {
+            "Host"              : "search.51job.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "guid=14968196124039010025; adv=adsnew=0&|&adsresume=1&|&adsfrom=&|&adsnum=789233; 51job=cenglish=0; slife=lowbrowser=not&|&; ps=us=DDUGbA5oAChcP1oyVjFTfgEzU2FVfVE1VWoHbQF3ATAAPFEzAWsKPQJhDGJQPAA1VmMKOgQzUzVSKFx7DTFSZAw9Bic=&|&; partner=51jobhtml5;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://search.51job.com/list/070300,000000,0000,04,9,99,%25E5%2590%25B4%25E6%25B1%259F,2,1.html?lang=c&stype=1&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&lonlat=0%2C0&radius=-1&ord_field=1&confirmdate=9&fromType=1&dibiaoid=0&address=&line=&specialarea=00&from=&welfare="
+    }
+]
