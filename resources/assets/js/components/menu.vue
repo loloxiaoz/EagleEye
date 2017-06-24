@@ -1,4 +1,7 @@
 <style scoped>
+    .full-content{
+        height : 100%;
+    }
     .layout{
         border: 1px solid #d7dde4;
         background: #f5f7f9;
@@ -50,9 +53,9 @@
     }
 </style>
 <template>
-    <div class="layout" :class="{'layout-hide-text': spanLeft < 5}">
-        <Row type="flex">
-            <i-col :span="spanLeft" class="layout-menu-left">
+    <div class="layout full-content">
+        <Row type="flex" class="full-content">
+            <i-col :span="spanLeft" class="layout-menu-left full-content">
                 <Menu active-name="1" theme="dark" width="auto">
                     <Menu-item name="1">
                         <Icon type="ios-navigate" :size="iconSize"></Icon>
@@ -132,7 +135,6 @@ export default {
         async getData(){
             var self=this;
             const datas=await dataLists();
-            console.log(datas);
             datas.forEach(function(value){
                     var obj={};
                     obj.name=value.ymd;
