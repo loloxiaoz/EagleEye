@@ -16,12 +16,12 @@ use AliyunMNS\Requests\PublishMessageRequest;
 
 class AliYun
 {
-    public static function sendCompanyAlarm($company,$address,$platform)
+    public static function sendCompanyAlarm($company,$address)
     {
-        $value["company"]   = $company;
+        $value["name"]      = $company;
         $value["address"]   = $address;
-        $value["platform"]  = $platform;
-        return static::send(config("push.companyAlarmTo"),config("push.companyAlarmTpl"),config("push.companyAlarmCode"),$value);
+//        $value["platform"]  = $platform;
+        return static::send(config("push.companyAlarmTo"),config("push.companySign"),config("push.companyAlarmCode"),$value);
     }
 
     public static function send($to, $sign, $code, $value)

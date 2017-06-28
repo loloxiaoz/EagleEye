@@ -79,9 +79,16 @@
                         <Breadcrumb-item href="#">应用中心</Breadcrumb-item>
                     </Breadcrumb>
                 </div>
+                <div class="layout-breadcrumb">
+                     <Date-picker type="datetime" format="yyyy-MM-dd HH:mm" placeholder="选择日期" style="width: 200px"></Date-picker>
+                     <Date-picker type="datetime" format="yyyy-MM-dd HH:mm" placeholder="选择日期" style="width: 200px"></Date-picker>
+                    <!-- <Select> -->
+                    <!--     <Option v&#45;for="item in websiteList" :value="item.value" :key="item">{{ item.name }}</Option> -->
+                    <!-- </Select> -->
+                </div>
                 <div class="layout-content">
                     <div class="layout-content-main">内容区域</div>
-                        <Table :columns="columns1" :data="data1"></Table>
+                        <Table height=1000 :columns="columns1" :data="data1"></Table>
                 </div>
                 <div class="layout-copy">
                     2016-2021 &copy; Loloxiaoz
@@ -102,19 +109,33 @@ export default {
             spanRight: 19,
             columns1: [
                 {
-                    title: '姓名',
+                    title: '日期',
                     key: 'name'
                 },
                 {
-                    title: '年龄',
-                    key: 'age'
+                    title: '网站',
+                    key: 'url'
                 },
                 {
-                    title: '地址',
+                    title: '公司名',
                     key: 'address'
                 }
             ],
-            data1: []
+            websiteList: [
+                {
+                    name: '58同城',
+                    value: '58'
+                },
+                {
+                    name: '猎聘',
+                    value: 'LiePin'
+                },
+                {
+                    name: '中华英才网',
+                    value: 'ChinaHr'
+                }
+            ],
+            data1: [],
         }
     },
     computed: {
@@ -138,7 +159,7 @@ export default {
             datas.forEach(function(value){
                     var obj={};
                     obj.name=value.ymd;
-                    obj.age=value.id;
+                    obj.url=value.url;
                     obj.address=value.content;
                     self.data1.push(obj)
             });

@@ -7,7 +7,11 @@ return [
     'accessKey' => 'ADms5aOCQrrvxWBfu8uLEZ0RNQNiTD',
     'endPoint'  => 'http://1108391892193619.mns.cn-hangzhou.aliyuncs.com/',
 
-    'companyAlarmTpl'   =>'有新的公司出现啦',
-    'companyAlarmCode'  =>'SMS_72965039',
-    'companyAlarmTo'    =>'15210800580',
+    'companyAlarmCode'  => 'SMS_72805066',
+    'companyAlarmTo'    => '15210800580',
+    'companySign'       => '罗家',
+
+    'yunpianUrl' => 'http://sms.yunpian.com/v2/sms/single_send.json',
+    'yunpianKey' => 'e221eb17da6aac9fd2604a01e3edd878',
+
 ];

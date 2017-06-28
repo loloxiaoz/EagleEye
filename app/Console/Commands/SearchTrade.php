@@ -7,6 +7,7 @@ use App\Services\CurlHelper;
 use App\Services\Parser\Job51;
 use App\Services\Push\AliYun;
 use App\Snapshot;
+use Log;
 
 class SearchTrade extends Command
 {
@@ -34,8 +35,8 @@ class SearchTrade extends Command
     private function save($data,$tag)
     {
         foreach($data as $v){
-            // $ret    = Snapshot::where("keyword",$v)->count();
-            // if(!$ret){
+            $ret    = Snapshot::where("keyword",$v)->count();
+            if(!$ret){
                 $snapShot = new Snapshot;
                 $snapShot->url          = $tag;
                 $snapShot->ymd          = Date("Y-m-d");
@@ -43,10 +44,8 @@ class SearchTrade extends Command
                 $snapShot->content      = $v;
                 $snapShot->created_at   = time();
                 $snapShot->save();
-                $ret = AliYun::sendCompanyAlarm($v,"",$tag);
-var_dump($ret);
-exit;
-            // }
+                //$ret = AliYun::sendCompanyAlarm($v,$tag);
+            }
         }
     }
 
@@ -72,8 +71,8 @@ exit;
         foreach($this->config as $target){
             try{
                 $this->handleTarget($target);
-            }catch(Exception $e){
-                
+            }catch(\Exception $e){
+                Log::error('获取数据失败'.$target["tag"]);
             }
         }
     }
