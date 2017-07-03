@@ -21,4 +21,6 @@ export const promiseGet=(url,params)=>new Promise((resolve,reject) => {
    }).catch((e)=>{   
        reject(e);
    })
-})
+});
+
+

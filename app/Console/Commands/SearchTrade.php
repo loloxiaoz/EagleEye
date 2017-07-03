@@ -68,6 +68,7 @@ class SearchTrade extends Command
      */
     public function handle()
     {
+        echo Date("Y-m-d H:i:s")."\n";
         foreach($this->config as $target){
             try{
                 $this->handleTarget($target);

@@ -80,15 +80,36 @@
                     </Breadcrumb>
                 </div>
                 <div class="layout-breadcrumb">
-                     <Date-picker type="datetime" format="yyyy-MM-dd HH:mm" placeholder="选择日期" style="width: 200px"></Date-picker>
-                     <Date-picker type="datetime" format="yyyy-MM-dd HH:mm" placeholder="选择日期" style="width: 200px"></Date-picker>
-                    <!-- <Select> -->
-                    <!--     <Option v&#45;for="item in websiteList" :value="item.value" :key="item">{{ item.name }}</Option> -->
-                    <!-- </Select> -->
+                    <Form :model="formItem" :label-width="80">
+                        <Row>
+                            <Col span="6">
+                            <Form-item label="网站">
+                                <Select style="width:200px" label="选择网站" :model.sync=formItem.website @on-change="chooseWeb">
+                                    <Option v-for="item in websiteList" :value="item.value" :key="item">{{ item.name }}</Option>
+                                </Select>
+                            </Form-item>
+                            </Col>
+                            <Col span="6">
+                            <Form-item label="开始时间">
+                                <Date-picker type="datetime" format="yyyy-MM-dd" placeholder="选择日期" :value="formItem.beginTime" @on-change="chooseBT" style="width: 200px"></Date-picker>
+                            </Form-item>
+                            </Col>
+                            <Col span="6">
+                            <Form-item label="结束时间">
+                                <Date-picker type="datetime" format="yyyy-MM-dd" placeholder="选择日期" :value="formItem.endTime" @on-change="chooseET" style="width: 200px"></Date-picker>
+                            </Form-item>
+                            </Col>
+                            <Col span="6">
+                            <Form-item style="text-align:center;">
+                                <i-button type="primary" @click="handleSubmit('formItem')" >提交</i-button>
+                            </Form-item>
+                            </Col>
+                        </Row>
+                    </Form>
                 </div>
                 <div class="layout-content">
                     <div class="layout-content-main">内容区域</div>
-                        <Table height=1000 :columns="columns1" :data="data1"></Table>
+                        <Table height="700" :columns="columns1" :data="data1"></Table>
                 </div>
                 <div class="layout-copy">
                     2016-2021 &copy; Loloxiaoz
@@ -98,7 +119,7 @@
     </div>
 </template>
 <script>
-import {dataLists} from '../services/data'
+import {dataLists,getNowFormatDate} from '../services/data'
 export default {
     mounted() {
         this.getData();
@@ -107,6 +128,11 @@ export default {
         return {
             spanLeft: 5,
             spanRight: 19,
+            formItem: {
+                website: "",
+                beginTime: getNowFormatDate(new Date(new Date()-24*60*60*1000*2)),
+                endTime: getNowFormatDate(new Date())            
+            },
             columns1: [
                 {
                     title: '日期',
@@ -155,7 +181,12 @@ export default {
         },
         async getData(){
             var self=this;
-            const datas=await dataLists();
+            self.data1 = [];
+            const datas=await dataLists({
+                website:this.formItem.website,
+                beginTime:this.formItem.beginTime,
+                endTime:this.formItem.endTime
+            });
             datas.forEach(function(value){
                     var obj={};
                     obj.name=value.ymd;
@@ -163,7 +194,19 @@ export default {
                     obj.address=value.content;
                     self.data1.push(obj)
             });
-        }
+        },
+        chooseWeb(value){
+            this.formItem.website=value;
+        },
+        chooseBT(date){
+            this.formItem.beginTime=date;
+        },
+        chooseET(date){
+            this.formItem.endTime=date;
+        },
+        handleSubmit(formItem){
+            this.getData();
+        },
     }
 }
 </script>

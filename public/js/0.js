@@ -3369,6 +3369,27 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3379,6 +3400,11 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         return {
             spanLeft: 5,
             spanRight: 19,
+            formItem: {
+                website: "",
+                beginTime: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["a" /* getNowFormatDate */])(new Date(new Date() - 24 * 60 * 60 * 1000 * 2)),
+                endTime: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["a" /* getNowFormatDate */])(new Date())
+            },
             columns1: [{
                 title: '日期',
                 key: 'name'
@@ -3426,10 +3452,16 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         switch (_context.prev = _context.next) {
                             case 0:
                                 self = this;
-                                _context.next = 3;
-                                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["a" /* dataLists */])();
 
-                            case 3:
+                                self.data1 = [];
+                                _context.next = 4;
+                                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["b" /* dataLists */])({
+                                    website: this.formItem.website,
+                                    beginTime: this.formItem.beginTime,
+                                    endTime: this.formItem.endTime
+                                });
+
+                            case 4:
                                 datas = _context.sent;
 
                                 datas.forEach(function (value) {
@@ -3440,7 +3472,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                                     self.data1.push(obj);
                                 });
 
-                            case 5:
+                            case 6:
                             case 'end':
                                 return _context.stop();
                         }
@@ -3453,7 +3485,19 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             }
 
             return getData;
-        }()
+        }(),
+        chooseWeb: function chooseWeb(value) {
+            this.formItem.website = value;
+        },
+        chooseBT: function chooseBT(date) {
+            this.formItem.beginTime = date;
+        },
+        chooseET: function chooseET(date) {
+            this.formItem.endTime = date;
+        },
+        handleSubmit: function handleSubmit(formItem) {
+            this.getData();
+        }
     }
 });
 
@@ -3463,15 +3507,31 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(174);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return dataLists; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return dataLists; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getNowFormatDate; });
 
 var BIZ = "http://eagle.loloxiaoz.com";
 
 var dataLists = function dataLists() {
-  var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-  var url = BIZ + "/data/list";
-  return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__index__["a" /* promiseGet */])(url, params);
+    var url = BIZ + "/data/list";
+    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__index__["a" /* promiseGet */])(url, params);
+};
+
+var getNowFormatDate = function getNowFormatDate(date) {
+    var seperator1 = "-";
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var currentdate = year + seperator1 + month + seperator1 + strDate;
+    return currentdate;
 };
 
 /***/ }),
@@ -9646,31 +9706,106 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("应用中心")])], 1)], 1), _vm._v(" "), _c('div', {
     staticClass: "layout-breadcrumb"
+  }, [_c('Form', {
+    attrs: {
+      "model": _vm.formItem,
+      "label-width": 80
+    }
+  }, [_c('Row', [_c('Col', {
+    attrs: {
+      "span": "6"
+    }
+  }, [_c('Form-item', {
+    attrs: {
+      "label": "网站"
+    }
+  }, [_c('Select', {
+    staticStyle: {
+      "width": "200px"
+    },
+    attrs: {
+      "label": "选择网站",
+      "model": _vm.formItem.website
+    },
+    on: {
+      "update:model": function($event) {
+        _vm.formItem.website = $event
+      },
+      "on-change": _vm.chooseWeb
+    }
+  }, _vm._l((_vm.websiteList), function(item) {
+    return _c('Option', {
+      key: item,
+      attrs: {
+        "value": item.value
+      }
+    }, [_vm._v(_vm._s(item.name))])
+  }))], 1)], 1), _vm._v(" "), _c('Col', {
+    attrs: {
+      "span": "6"
+    }
+  }, [_c('Form-item', {
+    attrs: {
+      "label": "开始时间"
+    }
   }, [_c('Date-picker', {
     staticStyle: {
       "width": "200px"
     },
     attrs: {
       "type": "datetime",
-      "format": "yyyy-MM-dd HH:mm",
-      "placeholder": "选择日期"
+      "format": "yyyy-MM-dd",
+      "placeholder": "选择日期",
+      "value": _vm.formItem.beginTime
+    },
+    on: {
+      "on-change": _vm.chooseBT
     }
-  }), _vm._v(" "), _c('Date-picker', {
+  })], 1)], 1), _vm._v(" "), _c('Col', {
+    attrs: {
+      "span": "6"
+    }
+  }, [_c('Form-item', {
+    attrs: {
+      "label": "结束时间"
+    }
+  }, [_c('Date-picker', {
     staticStyle: {
       "width": "200px"
     },
     attrs: {
       "type": "datetime",
-      "format": "yyyy-MM-dd HH:mm",
-      "placeholder": "选择日期"
+      "format": "yyyy-MM-dd",
+      "placeholder": "选择日期",
+      "value": _vm.formItem.endTime
+    },
+    on: {
+      "on-change": _vm.chooseET
     }
-  })], 1), _vm._v(" "), _c('div', {
+  })], 1)], 1), _vm._v(" "), _c('Col', {
+    attrs: {
+      "span": "6"
+    }
+  }, [_c('Form-item', {
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_c('i-button', {
+    attrs: {
+      "type": "primary"
+    },
+    on: {
+      "click": function($event) {
+        _vm.handleSubmit('formItem')
+      }
+    }
+  }, [_vm._v("提交")])], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('div', {
     staticClass: "layout-content"
   }, [_c('div', {
     staticClass: "layout-content-main"
   }, [_vm._v("内容区域")]), _vm._v(" "), _c('Table', {
     attrs: {
-      "height": "1000",
+      "height": "700",
       "columns": _vm.columns1,
       "data": _vm.data1
     }

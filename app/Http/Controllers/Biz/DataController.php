@@ -9,9 +9,16 @@ use App\Snapshot;
 
 class DataController extends Controller
 {
-    public function get()
+    public function get(Request $request)
     {
-        return $data   =SnapShot::all(); 
+        $website    = $request->website;
+        $beginYmd   = Date("Y-m-d",strtotime($request->beginTime));
+        $endYmd     = Date("Y-m-d",strtotime($request->endTime));
+        if(!empty($website)){
+            return SnapShot::where("url",$website)->where("ymd",">=",$beginYmd)->where("ymd","<=",$endYmd)->orderBy('ymd','desc')->get(); 
+        }else{
+            return SnapShot::where("ymd",">=",$beginYmd)->where("ymd","<=",$endYmd)->orderBy('ymd','desc')->get(); 
+        }
     }
 
     public function insert()
