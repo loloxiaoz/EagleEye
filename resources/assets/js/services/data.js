@@ -1,5 +1,5 @@
 import {promiseGet} from './index'
-const BIZ = "http://eagle.loloxiaoz.com"
+const BIZ = "http://www.loloxiaoz.com"
 
 export const dataLists= (params={}) =>{
   const url = `${BIZ}/data/list` ;

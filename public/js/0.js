@@ -3402,7 +3402,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             spanRight: 19,
             formItem: {
                 website: "",
-                beginTime: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["a" /* getNowFormatDate */])(new Date(new Date() - 24 * 60 * 60 * 1000 * 2)),
+                beginTime: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["a" /* getNowFormatDate */])(new Date(new Date() - 24 * 60 * 60 * 1000 * 5)),
                 endTime: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__services_data__["a" /* getNowFormatDate */])(new Date())
             },
             columns1: [{
@@ -3510,7 +3510,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return dataLists; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getNowFormatDate; });
 
-var BIZ = "http://eagle.loloxiaoz.com";
+var BIZ = "http://www.loloxiaoz.com";
 
 var dataLists = function dataLists() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};

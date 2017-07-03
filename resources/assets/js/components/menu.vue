@@ -130,7 +130,7 @@ export default {
             spanRight: 19,
             formItem: {
                 website: "",
-                beginTime: getNowFormatDate(new Date(new Date()-24*60*60*1000*2)),
+                beginTime: getNowFormatDate(new Date(new Date()-24*60*60*1000*5)),
                 endTime: getNowFormatDate(new Date())            
             },
             columns1: [

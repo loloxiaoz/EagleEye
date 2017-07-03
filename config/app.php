@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://eagle.loloxiaoz.com/'),
+    'url' => env('APP_URL', 'http://www.loloxiaoz.com/'),
 
     /*
     |--------------------------------------------------------------------------
