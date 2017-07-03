@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('search:trade')
-                 ->everyMinute()->withoutOverlapping()->appendOutputTo("search.log");
+                 ->everyMinute()->appendOutputTo("search.log");
     }
 
     /**
