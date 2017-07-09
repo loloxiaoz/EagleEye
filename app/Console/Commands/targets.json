@@ -1,5 +1,35 @@
 [
     {
+        "tag"       : "Zp0512",
+        "name"      : "\\App\\Services\\Parser\\Zp0512",
+        "header"    : {
+            "Host"              : "www.0512zp.cn",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ASPSESSIONIDSCAADRBT=NCHAHMCDNEICNFMNAMJPFLBN; UM_distinctid=15d1ca935645fc-07277344ebc207-3063750b-384000-15d1ca93565c2; ASPSESSIONIDQCBACTAT=MEFMDEMADHKBEIAEGOKIKEIP; CNZZDATA869731=cnzz_eid%3D303746269-1499419245-%26ntime%3D1499592752"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.0512zp.cn/Company/Com_Search_Base.asp?PageNo=4&slt_subcategory=0%2D0&slt_workplacecity=%B2%BB%CF%DE&PublishDate=9999&Key=%CD%E2%C3%B3&KeyClass=1"
+    },   
+    {
+        "tag"       : "WujiangHr",
+        "name"      : "\\App\\Services\\Parser\\WujiangHr",
+        "header"    : {
+            "Host"              : "www.wujianghr.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ci_session=e4f04253855339f06eb8fb4aed98681e4bf1235b; UM_distinctid=15d26b793af459-04f49f8ed0c3e5-3063750b-fa000-15d26b793b0515; CNZZDATA762664=cnzz_eid%3D738150774-1499593148-https%253A%252F%252Fwww.baidu.com%252F%26ntime%3D1499593148"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.wujianghr.com/person.html?key=外贸"
+    },   
+    {
         "tag"       : "ChinaHr",
         "name"      : "\\App\\Services\\Parser\\ChinaHr",
         "header"    : {
