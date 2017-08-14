@@ -109,16 +109,21 @@ class CurlHelper
     public function translate($content,$toEncode="UTF-8")
     {
         $fromEncode    = $this->extractEncode($content);
-        return mb_convert_encoding($content,$toEncode,$fromEncode);;
+        if(empty($fromEncode)){
+            return $content;
+        }else{
+            return mb_convert_encoding($content,$toEncode,$fromEncode);;
+        }
     }
 
     public function extractEncode($content)
     {
         $regx = "/charset=(.*)\"/";
         preg_match($regx,$content,$result);
-        if(count($result)!=2){
-            throw new RunTimeException("未找到合适的编码");
+        if(count($result)){
+            return $result[1];
+        }else{
+            return '';
         }
-        return $result[1];
     }
 }

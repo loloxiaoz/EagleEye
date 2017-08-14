@@ -159,6 +159,14 @@ export default {
                 {
                     name: '中华英才网',
                     value: 'ChinaHr'
+                },
+                {
+                    name: '吴江hr',
+                    value: 'WujiangHr'
+                },
+                {
+                    name: '锦绣网',
+                    value: 'Zp0512'
                 }
             ],
             data1: [],

@@ -73,5 +73,20 @@
         },
         "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
         "url"       : "http://su.58.com/wujiangshi/zpshangwumaoyi/pve_5363_254_pve_5358_0/"
+    },
+    {
+        "tag"       : "wjhr",
+        "name"      : "\\App\\Services\\Parser\\WJHR",
+        "header"    : {
+            "Host"              : "www.wjhr.net",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ASP.NET_SessionId=npv34goqbbpdnjqteyahcxoa; Hm_lvt_317e48b03f38d6cbbca151d401f890c9=1502691802; Hm_lpvt_317e48b03f38d6cbbca151d401f890c9=1502692142"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.wjhr.net/Recruitment/RecruitInfo/SearchResultItems.aspx?WordKey=%E5%A4%96%E8%B4%B8&wordKeyType=3&S_Character=0&S_WorkAddress=0&S_JobBigClass=0&S_JobSmallClass=0&UpdateTime=0&IsImpatient=1&pageSize=50&pageIndex=1&orderKey=RecruitTime&isASC=0&isCount=1"
     }
 ]

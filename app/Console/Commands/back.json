@@ -1,19 +1,34 @@
 [
     {
-        "tag"       : "51Job",
-        "name"      : "\\App\\Services\\Parser\\Job51",
+        "tag"       : "Zp0512",
+        "name"      : "\\App\\Services\\Parser\\Zp0512",
         "header"    : {
-            "Host"              : "search.51job.com",
+            "Host"              : "www.0512zp.cn",
             "Connection"        : "keep-alive",
             "Pragma"            : "no-cache",
             "Cache-Control"     : "no-cache",
             "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
-            "Cookie"            : "guid=14968196124039010025; adv=adsnew=0&|&adsresume=1&|&adsfrom=&|&adsnum=789233; 51job=cenglish=0; slife=lowbrowser=not&|&; ps=us=DDUGbA5oAChcP1oyVjFTfgEzU2FVfVE1VWoHbQF3ATAAPFEzAWsKPQJhDGJQPAA1VmMKOgQzUzVSKFx7DTFSZAw9Bic=&|&; partner=51jobhtml5;"
+            "Cookie"            : "ASPSESSIONIDSCAADRBT=NCHAHMCDNEICNFMNAMJPFLBN; UM_distinctid=15d1ca935645fc-07277344ebc207-3063750b-384000-15d1ca93565c2; ASPSESSIONIDQCBACTAT=MEFMDEMADHKBEIAEGOKIKEIP; CNZZDATA869731=cnzz_eid%3D303746269-1499419245-%26ntime%3D1499592752"
         },
         "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
-        "url"       : "http://search.51job.com/list/070300,000000,0000,04,9,99,%25E5%2590%25B4%25E6%25B1%259F,2,1.html?lang=c&stype=1&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&lonlat=0%2C0&radius=-1&ord_field=1&confirmdate=9&fromType=1&dibiaoid=0&address=&line=&specialarea=00&from=&welfare="
-    },
+        "url"       : "http://www.0512zp.cn/Company/Com_Search_Base.asp?PageNo=4&slt_subcategory=0%2D0&slt_workplacecity=%B2%BB%CF%DE&PublishDate=9999&Key=%CD%E2%C3%B3&KeyClass=1"
+    },   
+    {
+        "tag"       : "WujiangHr",
+        "name"      : "\\App\\Services\\Parser\\WujiangHr",
+        "header"    : {
+            "Host"              : "www.wujianghr.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ci_session=e4f04253855339f06eb8fb4aed98681e4bf1235b; UM_distinctid=15d26b793af459-04f49f8ed0c3e5-3063750b-fa000-15d26b793b0515; CNZZDATA762664=cnzz_eid%3D738150774-1499593148-https%253A%252F%252Fwww.baidu.com%252F%26ntime%3D1499593148"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.wujianghr.com/person.html?key=外贸"
+    },   
     {
         "tag"       : "ChinaHr",
         "name"      : "\\App\\Services\\Parser\\ChinaHr",
@@ -58,5 +73,6 @@
         },
         "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
         "url"       : "http://su.58.com/wujiangshi/zpshangwumaoyi/pve_5363_254_pve_5358_0/"
-    }
+    },
+
 ]
