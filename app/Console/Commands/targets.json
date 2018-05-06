@@ -137,6 +137,22 @@
         "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
         "url"       : "http://www.sz.ccoo.cn/post/zhaopin/?key=%CD%E2%C3%B3%D2%B5%CE%F1%D4%B1"
                        
+    },
+    {
+        "tag"       : "baidu",
+        "name"      : "\\App\\Services\\Parser\\BAIDU",
+        "header"    : {
+            "Host"              : "zhaopin.baidu.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.9,en;q=0.8",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://zhaopin.baidu.com/quanzhi?city=%E8%8B%8F%E5%B7%9E&query=%E5%A4%96%E8%B4%B8%E4%B8%9A%E5%8A%A1%E5%91%98"
     }
+
 
 ]
