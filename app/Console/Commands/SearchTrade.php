@@ -45,6 +45,7 @@ class SearchTrade extends Command
                 $snapShot->created_at   = time();
                 $snapShot->save();
                 $ret = AliYun::sendCompanyAlarm($v,$tag);
+                var_dump($ret);
             }
         }
     }

@@ -79,3 +79,95 @@
     },
 
 ]
+[
+    {
+        "tag"       : "Zp0512",
+        "name"      : "\\App\\Services\\Parser\\Zp0512",
+        "header"    : {
+            "Host"              : "www.0512zp.cn",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ASPSESSIONIDSCAADRBT=NCHAHMCDNEICNFMNAMJPFLBN; UM_distinctid=15d1ca935645fc-07277344ebc207-3063750b-384000-15d1ca93565c2; ASPSESSIONIDQCBACTAT=MEFMDEMADHKBEIAEGOKIKEIP; CNZZDATA869731=cnzz_eid%3D303746269-1499419245-%26ntime%3D1499592752"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.0512zp.cn/Company/Com_Search_Base.asp?PageNo=1&slt_subcategory=0%2D0&slt_workplacecity=%B2%BB%CF%DE&PublishDate=9999&Key=%CD%E2%C3%B3&KeyClass=1"
+    },   
+    {
+        "tag"       : "WujiangHr",
+        "name"      : "\\App\\Services\\Parser\\WujiangHr",
+        "header"    : {
+            "Host"              : "www.wujianghr.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ci_session=e4f04253855339f06eb8fb4aed98681e4bf1235b; UM_distinctid=15d26b793af459-04f49f8ed0c3e5-3063750b-fa000-15d26b793b0515; CNZZDATA762664=cnzz_eid%3D738150774-1499593148-https%253A%252F%252Fwww.baidu.com%252F%26ntime%3D1499593148"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.wujianghr.com/person.html?key=外贸"
+    },   
+    {
+        "tag"       : "ChinaHr",
+        "name"      : "\\App\\Services\\Parser\\ChinaHr",
+        "header"    : {
+            "Host"              : "www.chinahr.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "chrId=cc627b9fc7d248afa81d148a6789042e; gr_user_id=c845b50e-6db6-4432-8075-34f1c14afda0; wmda_uuid=1d2974124421052e2babe09bb72eb580; wmda_new_uuid=1; wmda_visited_projects=%3B1732047435009; als=0; gtid=a963edac3cf443fb9dfbbf0d5a5c0730; 58tj_uuid=c8fee58f-9bd4-4762-8a70-b5cffe8bc625; channel=social; new_session=0; new_uv=1; utm_source=; spm=; init_refer=https%253A%252F%252Fwww.baidu.com%252Flink%253Furl%253DB1b_P1r5B2ngK4ghcJ6_ml0uumEVBgcQdNJnVrXmtOG_bjO6sowELW75U5H-mlCw%2526wd%253D%2526eqid%253Ddb9a1b1300071b3400000002594f7467; gr_session_id_be17cdb1115be298=39772606-3089-4408-84a4-42bfefdcb2f9; wmda_session_id=1498379371055-f5ba8ffc-86d3-60fe; RecentVisitCity=398_beijing; RecentVisitCityFullpathPc=34,398"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.chinahr.com/sou/?city=16%2C173&keyword=%E5%A4%96%E8%B4%B8&industrys=1103%2C11037"
+    },    
+    {
+        "tag"       : "LiePin",
+        "name"      : "\\App\\Services\\Parser\\LiePin",
+        "header"    : {
+            "Host"              : "www.liepin.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "__uuid=1494777196763.36; _uuid=07A9F130FFA8420C76F070F37BE53AAB; _fecdn_=1; gr_user_id=ceef7478-f7e1-46d3-adf6-71134a057300; 1e59c226=034c6aac1334f1748e5c414dc586ef72; d865929e=4dfee313639372f1d0a18ccd77d38f99; user_name=%E6%9C%B1%E6%99%93%E7%8E%B2; lt_auth=uugPOnNUxgr65HmPjmMI4vscjY79Am%2FOpXQIgh9T0oW6X%2FCw4PzqQQuCqbcGxBMhlUhxIsULNbn2%0D%0ANu%2F4zHJO70UUwGqkloCyv%2Fqk0HoHUeVjLsWihfz7lZiESs0ml38Cn3tq9HhIxESl4RV0Y4DonV%2F1%0D%0A4qHH7qSc8PLNgxw%3D%0D%0A; UniqueKey=343e3aa5792ac53a1a667e00ad0d9493; user_kind=0; is_lp_user=true; verifycode=d1e8d1d46ba54ce8b7b619350176d926; login_temp=islogin; em_username=9888763705z2528026735; em_token=YWMtwp-vZFl5EeeXUYNOVBd9ZE8TxtBqMxHkgus5YKfC9XFKxBpgyd0R5o2oB1Po4hyOAwMAAAFc3jMtbABPGgBDaD-T913lqIv_1RBTwTRm4gGnkEbq14llE99vL-W4FQ; abtest=0; user_photo=573d5d4e45ceaa9b92133e9206a.jpg; JSESSIONID=FBC9161E209A0B204DB65020B184DB1C; "
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "https://www.liepin.com/zhaopin/?industries=&dqs=060080&salary=&jobKind=&pubTime=&compkind=&compscale=&industryType=&searchType=1&clean_condition=&isAnalysis=&init=1&sortFlag=15&flushckid=0&fromSearchBtn=1&headckid=d9ff84dfb06d74f6&key=%E5%A4%96%E8%B4%B8"
+    },    
+    {
+        "tag"       : "58",
+        "name"      : "\\App\\Services\\Parser\\TongCheng58",
+        "header"    : {
+            "Host"              : "googleads.g.doubleclick.net",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://su.58.com/wujiangshi/zpshangwumaoyi/pve_5363_254_pve_5358_0/"
+    },
+    {
+        "tag"       : "wjhr",
+        "name"      : "\\App\\Services\\Parser\\WJHR",
+        "header"    : {
+            "Host"              : "www.wjhr.net",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "ASP.NET_SessionId=npv34goqbbpdnjqteyahcxoa; Hm_lvt_317e48b03f38d6cbbca151d401f890c9=1502691802; Hm_lpvt_317e48b03f38d6cbbca151d401f890c9=1502692142"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.wjhr.net/Recruitment/RecruitInfo/SearchResultItems.aspx?WordKey=%E5%A4%96%E8%B4%B8&wordKeyType=3&S_Character=0&S_WorkAddress=0&S_JobBigClass=0&S_JobSmallClass=0&UpdateTime=0&IsImpatient=1&pageSize=50&pageIndex=1&orderKey=RecruitTime&isASC=0&isCount=1"
+    }
+]

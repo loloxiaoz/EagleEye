@@ -22,7 +22,6 @@ class AliYun
     {
         $value["name"]      = $company;
         $value["address"]   = $address;
-        //        $value["platform"]  = $platform;
         return static::send(config("push.companyAlarmTo"),config("push.companySign"),config("push.companyAlarmCode"),$value);
     }
 
