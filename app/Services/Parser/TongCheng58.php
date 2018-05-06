@@ -12,7 +12,7 @@ class TongCheng58
     {
         $data       = array();
         $this->content = str_replace("\n","",$this->content);
-        $pattern    = "/<dd class=\"w271\">(.*?)<\/dd>/";
+        $pattern    = "/<div class=\"comp_name\"(.*?)<\/div>/";
         preg_match_all($pattern,$this->content,$result);
         if(count($result[1])){
             $pattern    = "/title=\"(.*?)\">/";

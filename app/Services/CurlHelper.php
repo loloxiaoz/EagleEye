@@ -109,7 +109,7 @@ class CurlHelper
     public function translate($content,$toEncode="UTF-8")
     {
         $fromEncode    = $this->extractEncode($content);
-        if(empty($fromEncode)){
+        if(empty($fromEncode)||$fromEncode=="UTF-8"){
             return $content;
         }else{
             return mb_convert_encoding($content,$toEncode,$fromEncode);;
@@ -121,7 +121,8 @@ class CurlHelper
         $regx = "/charset=(.*)\"/";
         preg_match($regx,$content,$result);
         if(count($result)){
-            return $result[1];
+            $encode = ltrim($result[1], "\"");
+            return $encode;
         }else{
             return '';
         }

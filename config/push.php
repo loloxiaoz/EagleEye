@@ -8,8 +8,8 @@ return [
     'endPoint'  => 'http://1108391892193619.mns.cn-hangzhou.aliyuncs.com/',
 
     'companyAlarmCode'  => 'SMS_72805066',
-    'companyAlarmTo'    => '17751775266',
-#    'companyAlarmTo'    => '15210800580',
+#    'companyAlarmTo'    => '17751775266',
+    'companyAlarmTo'    => '15210800580',
     'companySign'       => '罗家',
 
     'yunpianUrl' => 'http://sms.yunpian.com/v2/sms/single_send.json',
