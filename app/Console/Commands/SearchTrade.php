@@ -59,6 +59,7 @@ class SearchTrade extends Command
         $parserName = $target["name"];
         $parser     = new $parserName($content);
         $data       = $parser->handle();
+        var_dumP($target["tag"]);
         $this->save($data,$target["tag"]);
     }
 
@@ -74,7 +75,7 @@ class SearchTrade extends Command
             try{
                 $this->handleTarget($target);
             }catch(\Exception $e){
-                Log::error('获取数据失败'.$target["tag"]);
+                Log::error('获取数据失败'.$target["tag"].",".$e->getMessage());
             }
         }
     }

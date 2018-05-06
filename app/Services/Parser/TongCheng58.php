@@ -19,7 +19,7 @@ class TongCheng58
             foreach($result[1] as $v){
                 preg_match($pattern,$v,$ret);
                 if(count($ret)){
-                    $data[]     = $ret[1];
+                    $data[]     = trim($ret[1]);
                 }
             }
         }

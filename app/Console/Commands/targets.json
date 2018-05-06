@@ -58,5 +58,85 @@
         },
         "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
         "url"       : "http://www.job256.com/Person/IndexSear.asp?tn=job256&tr=Aa&word=%CD%E2%C3%B3%D2%B5%CE%F1%D4%B1&A=1"
+    },
+    {
+        "tag"       : "ohr",
+        "name"      : "\\App\\Services\\Parser\\OHR",
+        "header"    : {
+            "Host"              : "www.o-hr.cn",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.8,en;q=0.6",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.o-hr.cn/jobs/search?keywords=%E5%A4%96%E8%B4%B8%E4%B8%9A%E5%8A%A1%E5%91%98"
+    },
+    {
+        "tag"       : "ganji",
+        "name"      : "\\App\\Services\\Parser\\GanJi",
+        "header"    : {
+            "Host"              : "su.ganji.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.9,en;q=0.8",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://su.ganji.com/zhaopin/s/_%E5%A4%96%E8%B4%B8%E4%B8%9A%E5%8A%A1%E5%91%98/"
+                       
+    },
+    {
+        "tag"       : "baixing",
+        "name"      : "\\App\\Services\\Parser\\BaiXing",
+        "header"    : {
+            "Host"              : "suzhou.baixing.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.9,en;q=0.8",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://suzhou.baixing.com/search/?query=%E5%A4%96%E8%B4%B8%E4%B8%9A%E5%8A%A1%E5%91%98"
+                       
+    },
+    {
+        "tag"       : "caihao",
+        "name"      : "\\App\\Services\\Parser\\CaiHao",
+        "header"    : {
+            "Host"              : "sz.caihao.com",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.9,en;q=0.8",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://sz.caihao.com/Search/Index?wd=%E5%A4%96%E8%B4%B8%E4%B8%9A%E5%8A%A1%E5%91%98"
+                       
+    },
+    {
+        "tag"       : "ccoo",
+        "name"      : "\\App\\Services\\Parser\\CCOO",
+        "header"    : {
+            "Host"              : "www.sz.ccoo.cn",
+            "Connection"        : "keep-alive",
+            "Pragma"            : "no-cache",
+            "Cache-Control"     : "no-cache",
+            "Accept"            : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language"   : "zh-CN,zh;q=0.9,en;q=0.8",
+            "Cookie"            : "id=278b377c6141fa6b||t=1482128292|et=730|cs=002213fd484ea7cc1e0fcb1f12; userid=A8850184-B2B1-21E6-B3B3-0C423CFDAB46;"
+        },
+        "userAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" ,
+        "url"       : "http://www.sz.ccoo.cn/post/zhaopin/?key=%CD%E2%C3%B3%D2%B5%CE%F1%D4%B1"
+                       
     }
+
 ]
