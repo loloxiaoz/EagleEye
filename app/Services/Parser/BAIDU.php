@@ -12,10 +12,10 @@ class BAIDU
     {
         $data       = array();
         $this->content = str_replace("\n","",$this->content);
-        $pattern    = "/class=\"area line-clamp1\">(.*?)<\/div>/";
+        $pattern    = "/class=\"company(.*?)<\/div>/";
         preg_match_all($pattern,$this->content,$result);
         if(count($result[1])){
-            $pattern    = "/.*&nbsp;(.*?)<\/p>/";
+            $pattern    = "/class=\"inlineblock\" data-a-6cdf1844>(.*?)<\/span>/";
             foreach($result[1] as $v){
                 preg_match($pattern,$v,$ret);
                 if(count($ret)){
